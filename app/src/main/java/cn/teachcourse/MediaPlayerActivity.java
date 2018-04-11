@@ -80,7 +80,7 @@ public class MediaPlayerActivity extends AppCompatActivity implements View.OnCli
         try {
             //设置音频流类型
             mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-            // 设置播放的视频源
+            // 设置播放的视频源，项目中不包含mv_song.mp4文件，保存路径main/assets/mv_song.mp4
             AssetFileDescriptor fd = getAssets().openFd("mv_song.mp4");
             mediaPlayer.setDataSource(fd.getFileDescriptor(), fd.getStartOffset(), fd.getLength());
             mediaPlayer.setDisplay(surfaceView.getHolder());// 设置将视频画面输出到SurfaceView
