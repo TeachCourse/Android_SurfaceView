@@ -2,7 +2,7 @@ SurfaceView继承自View，对View进行优化，适合在子线程频繁地刷�
 
 `SurfaceHolder.Callback`提供管理SurfaceView生命周期的三个方法：`surfaceCreated()`、`surfaceChanged()`、`surfaceDestroyed()`，在相应的回调方法中处理操作
 
-*Note that：*不用画布，直接在窗口上进行绘图叫做无缓冲绘图。用了一个画布，将所有内容都先画到画布上，在整体绘制到窗口上，就该叫做单缓冲绘图，那个画布就是一个缓冲区。用了一个画布和一个Bitmap，画布保存临时的绘图，Bitmap保存绘图的历史记录，这样就叫做双缓冲绘图。
+*Note that：* 不用画布，直接在窗口上进行绘图叫做无缓冲绘图。用了一个画布，将所有内容都先画到画布上，在整体绘制到窗口上，就该叫做单缓冲绘图，那个画布就是一个缓冲区。用了一个画布和一个Bitmap，画布保存临时的绘图，Bitmap保存绘图的历史记录，这样就叫做双缓冲绘图。
 
 ```java
 public class DrawingRectangleBoard extends SurfaceView implements SurfaceHolder.Callback, Runnable {
