@@ -117,6 +117,6 @@ public class DrawingRectangleBoard extends SurfaceView implements SurfaceHolder.
 }
 ```
 
-[例子源码1](app/src/main/java/cn/teachcourse/surfaceview)
+[例子源码1](/app/src/main/java/cn/teachcourse/)
 
 [例子源码2](https://github.com/TeachCourse/BlogSource/blob/master/app/src/main/java/cn/teachcourse/app/VideoMainActivity.java)
